@@ -6,9 +6,9 @@ import matplotlib.colors as colors
 import numpy as np
 
 
-from tools.data_operation import calculate_covariance_matrix
-from tools.data_operation import calculate_correlation_matrix
-from tools.data_manipulation import standardize
+from utilities.data_operation import calculate_covariance_matrix
+from utilities.data_operation import calculate_correlation_matrix
+from utilities.data_manipulation import standardize
 
 
 
