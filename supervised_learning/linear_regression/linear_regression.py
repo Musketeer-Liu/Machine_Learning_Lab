@@ -74,7 +74,7 @@ class LinearRegression():
         m_samples, n_features = X.shape
         self.initialize_weights(n_features)
         X = np.insert(X, 0, 1, axis=1)
-        y = np.insert(y, (m_samples, 1))
+        y = np.reshape(y, (m_samples, 1))
         self.training_errors = []
 
         if self.gradient == True:
@@ -96,7 +96,7 @@ class LinearRegression():
 
     def predict(self, X):
         X = np.insert(X, 0, 1, axis=1)
-        y_pred = X.dot(self, w)
+        y_pred = X.dot(self.w)
         return y_pred
 
 
