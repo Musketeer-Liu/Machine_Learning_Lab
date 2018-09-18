@@ -22,7 +22,7 @@ def calculate_entropy(y):
     return entropy
 
 
-def mean_square_error(y_true, y_pred):
+def mean_squared_error(y_true, y_pred):
     'Return mean squared error between prediction and true value'
     mse = np.mean(np.power(y_true - y_pred, 2))
     return mse
