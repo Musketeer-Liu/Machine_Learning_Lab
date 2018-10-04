@@ -1,10 +1,19 @@
+import os
+import sys
+# basedir = os.path.abspath(os.path.dirname(__file__))
+# sys.path.append(basedir)
+sys.path.append('~/GitHub/Machine_Learning_Lab')
+sys.path.append('/Users/yutong/GitHub/Machine_Learning_Lab')
+sys.path.append('..')
+
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.datasets import make_regression
 
 
-from supervised_learning import linear_regression
+from ..supervised_learning.linear_regression.linear_regression import LinearRegression
 from utilities.data_manipulation import train_test_split
 from utilities.data_operation import mean_squared_error
 from utilities import plotting
